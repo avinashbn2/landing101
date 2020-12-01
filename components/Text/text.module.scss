@@ -1,6 +1,32 @@
-.text{
+@import '../../styles/typefaces.scss';
+
+.text {
+  font-size: 18px;
+  font-family: 'AvenirNextLTPro-Regular';
+  &Bold {  
+    font-family: 'AvenirNextLTPro-Bold';
+
+  }
+  &XS {
+    font-size: 12px;
+  }
+  &SM {
+    font-size: 15px;
+  }
+  &MD {
     font-size: 18px;
-    text-align:center;
-    font-style: italic;
-    
+  }
+  &LG {
+    font-size: 26px;
+  }
+  &XL {
+    font-size: 36px;
+  }
+  &Center {
+    text-align: center;
+  }
+  &Italic {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+      Arial, sans-serif;
+  }
 }

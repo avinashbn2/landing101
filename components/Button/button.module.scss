@@ -1,0 +1,12 @@
+@import '../../styles/colors.scss';
+.button {
+  width: 200px;
+  padding: 16px;
+  border-radius: 45px;
+  outline: none;
+  border: 1px solid $textColor;
+  height: 60px;
+  background-color: transparent;
+  outline-color: $textColor;
+  cursor: pointer;
+}
