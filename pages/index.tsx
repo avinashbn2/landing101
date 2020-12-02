@@ -10,23 +10,24 @@ import Footer from '../components/Footer'
 export default function Page() {
   return (
     <div className={styles.main}>
-      <Container md fluid className={styles.mainHeader}>
-        <Header />
-        <img
-          src="/assets/logo.svg"
-          className={styles.mainLogo}
-          alt={locale.HEADER_BRAND}
-        />
-
-        <img
-          src="/assets/legsFemale.svg"
-          className={styles.mainImg}
-          alt={locale.HEADER_BRAND}
-        />
+      <Container fluid className={styles.mainHeader}>
+        <Container md>
+          <Header />
+          <img
+            src="/assets/logo.svg"
+            className={styles.mainLogo}
+            alt={locale.HEADER_BRAND}
+          />
+          <img
+            src="/assets/legsFemale.svg"
+            className={styles.mainImg}
+            alt={locale.HEADER_BRAND}
+          />
+        </Container>
       </Container>
       <Container md className={styles.mainBody}>
         <Row>
-          <Col md={5} offset={{ md: 1 }}>
+          <Col sm={10} md={5} offset={{ sm: 1, md: 1 }}>
             <div className={styles.mainBodyText}>
               <Text value={locale.HEADER_1} isBold variant="XL" />
               <Text value={locale.HEADER_2} variant="LG" />
@@ -53,7 +54,7 @@ export default function Page() {
           />
 
           <Row>
-            <Col md={5} offset={{ md: 7 }}>
+            <Col sm={10} md={5} offset={{ sm: 1, md: 7 }}>
               <div className={styles.mainBody2Text}>
                 <img
                   src="/assets/brandingText.svg"
@@ -94,7 +95,7 @@ or just confused about life."
       <div className={styles.mainBody3}>
         <Container md>
           <Row>
-            <Col sm={8} md={5} offset={{ sm: 1, md: 1 }}>
+            <Col sm={10} md={5} offset={{ sm: 1, md: 1 }}>
               <div className={styles.mainBody3Text}>
                 <Text
                   value="Meet Michelle
@@ -112,12 +113,14 @@ or just confused about life."
                 <Footer />
               </div>
             </Col>
-            <Col sm={8} md={4} offset={{ sm: 1, md: 1 }} style={{ margin: 'auto 0' }}>
-              <img
-                src="/assets/person.svg"
-                className={styles.imgPerson}
-                alt={locale.HEADER_BRAND}
-              />
+            <Col sm={10} md={4} offset={{ sm: 1, md: 1 }}>
+              <div style={{ margin: 'auto 0' }}>
+                <img
+                  src="/assets/person.svg"
+                  className={styles.imgPerson}
+                  alt={locale.HEADER_BRAND}
+                />
+              </div>
             </Col>
           </Row>
         </Container>

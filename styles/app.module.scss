@@ -6,12 +6,21 @@ $headerColor: #49bcc3;
 
 .main {
   background-color: $bgColor;
+
   &Header {
     min-height: 30vh;
+
+    @media screen and (min-width: 768px) {
+      min-height: 30vh;
+    }
   }
   &Logo {
     padding-top: 20px;
-    padding-left: 140px;
+    padding-left: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 140px;
+    }
   }
   &Body {
     &Text {
@@ -20,7 +29,10 @@ $headerColor: #49bcc3;
       justify-content: space-around;
       align-items: flex-start;
       color: white;
-      min-height: 62vh;
+      min-height: 100vh;
+      @media screen and (min-width: 768px) {
+        min-height: 62vh;
+      }
     }
     &ScrollBtn {
       text-align: center;
@@ -54,10 +66,18 @@ $headerColor: #49bcc3;
     }
   }
   &Img {
-    position: absolute;
     top: 0;
-    left: 20;
+    position: absolute;
+    left: 0;
     height: 100vh;
+    max-width: 90vw;
+    @media screen and (min-width: 768px) {
+      top: 0;
+      position: absolute;
+      left: 20%;
+      height: 100vh;
+      max-width: 100%;
+    }
   }
 }
 .about {
@@ -112,11 +132,15 @@ $headerColor: #49bcc3;
   &Img {
     position: absolute;
     top: 0;
-    left: 20;
+    // left: 20;
     height: 100vh;
   }
 }
 .imgPerson {
-  width: 400px;
+  // min-width
+  width: 200px;
   height: auto;
+  @media screen and (min-width: 768px) {
+    min-width: 400px;
+  }
 }
