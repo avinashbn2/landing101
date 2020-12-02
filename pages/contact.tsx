@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className={styles.main}>
       <Container md fluid className={styles.mainHeader}>
-        <Header />
+        <Header active="contact" />
         <img
           src="/assets/logo.svg"
           className={styles.mainLogo}

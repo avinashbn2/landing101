@@ -1,20 +1,46 @@
+@import '../../styles/colors.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $blue;
   &Nav {
     font-size: 26px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     max-width: 400px;
-    li {
-      padding: 8px;
+    a {
       text-decoration: none;
-      &:hover{
-        text-decoration: underline;
-        cursor: pointer;
+
+      li {
+        padding: 8px;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
+  }
+}
+// .active {
+//   &:after {
+//     width: 0;
+//     height: 0;
+//     border-left: 5px solid transparent;
+//     border-right: 5px solid transparent;
+//     border-bottom: 5px solid black;
+//   }
+// }
+.active {
+  &:after {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    content: '\25B2';
+    text-decoration: none;
+    color: $pink;
   }
 }

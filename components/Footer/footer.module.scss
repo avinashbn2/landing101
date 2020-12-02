@@ -1,0 +1,17 @@
+.footer {
+  &Nav {
+    font-size: 26px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    li {
+      padding: 8px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

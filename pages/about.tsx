@@ -9,25 +9,25 @@ import Footer from '../components/Footer'
 
 export default function Page() {
   return (
-    <div className={styles.main}>
-      <Container md fluid className={styles.mainHeader}>
-        <Header />
+    <div className={styles.about}>
+      <Container md fluid className={styles.aboutHeader}>
+        <Header active="about" />
         <img
           src="/assets/logo.svg"
-          className={styles.mainLogo}
+          className={styles.aboutLogo}
           alt={locale.HEADER_BRAND}
         />
 
         <img
           src="/assets/legsFemale.svg"
-          className={styles.mainImg}
+          className={styles.aboutImg}
           alt={locale.HEADER_BRAND}
         />
       </Container>
-      <Container md className={styles.mainBody}>
+      <Container md className={styles.aboutBody}>
         <Row>
           <Col md={5} offset={{ md: 1 }}>
-            <div className={styles.mainBodyText}>
+            <div className={styles.aboutBodyText}>
               <Text value={locale.HEADER_1} isBold variant="XL" />
               <Text value={locale.HEADER_2} variant="LG" />
               <Text value={locale.HEADER_3} variant="LG" />
@@ -35,29 +35,29 @@ export default function Page() {
             </div>
           </Col>
         </Row>
-        <div className={styles.mainBodyScrollBtn}>
+        <div className={styles.aboutBodyScrollBtn}>
           <Col>
-            <div className={styles.mainBodyScrollBtnText}>
+            <div className={styles.aboutBodyScrollBtnText}>
               <Text value="MORE" variant="MD" />
             </div>
             <img src="/assets/down.svg" alt={locale.HEADER_BRAND} />
           </Col>
         </div>
       </Container>
-      <div className={styles.mainBody2}>
+      <div className={styles.aboutBody2}>
         <Container md>
           <img
             src="/assets/legsMale.svg"
-            className={styles.mainImg}
+            className={styles.aboutImg}
             alt={locale.HEADER_BRAND}
           />
 
           <Row>
             <Col md={5} offset={{ md: 7 }}>
-              <div className={styles.mainBody2Text}>
+              <div className={styles.aboutBody2Text}>
                 <img
                   src="/assets/brandingText.svg"
-                  className={styles.mainLogo}
+                  className={styles.aboutLogo}
                   alt={locale.HEADER_BRAND}
                 />
 
@@ -91,11 +91,11 @@ or just confused about life."
           </Row>
         </Container>
       </div>
-      <div className={styles.mainBody3}>
+      <div className={styles.aboutBody3}>
         <Container md>
           <Row>
             <Col sm={8} md={5} offset={{ sm: 1, md: 1 }}>
-              <div className={styles.mainBody3Text}>
+              <div className={styles.aboutBody3Text}>
                 <Text
                   value="Meet Michelle
 (or ‘Moo’ if you prefer)"

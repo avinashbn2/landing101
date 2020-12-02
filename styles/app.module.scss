@@ -60,6 +60,62 @@ $headerColor: #49bcc3;
     height: 100vh;
   }
 }
+.about {
+  background-color: $pink;
+  &Header {
+    min-height: 30vh;
+  }
+  &Logo {
+    padding-top: 20px;
+    padding-left: 140px;
+  }
+  &Body {
+    &Text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      color: white;
+      min-height: 62vh;
+    }
+    &ScrollBtn {
+      text-align: center;
+      &Text {
+        padding-top: -4px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+  &Body2 {
+    background-color: $pink;
+    &Text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      color: white;
+      min-height: 100vh;
+      text-align: right;
+    }
+  }
+  &Body3 {
+    background-color: $blue;
+    &Text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      color: white;
+      min-height: 100vh;
+    }
+  }
+  &Img {
+    position: absolute;
+    top: 0;
+    left: 20;
+    height: 100vh;
+  }
+}
 .imgPerson {
   width: 400px;
   height: auto;
